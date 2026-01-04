@@ -237,3 +237,99 @@ a:hover {
         font-size: 0.9rem;
     }
 }
+
+/* Contact form layout */
+.contact-form {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: opacity 0.3s ease;
+}
+
+/* Disable entire form */
+.form-disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/* Inputs */
+.contact-form .form-control {
+    background: #0e131b;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #e5e7eb;
+    padding: 12px 14px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.contact-form .form-control:hover {
+    border-color: rgba(79, 209, 197, 0.6);
+}
+
+/* Focus effect */
+.contact-form .form-control:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(79, 209, 197, 0.25);
+    background: #0e131b;
+    color: #ffffff;
+}
+
+/* Error input */
+.input-error {
+    border-color: #f87171 !important;
+}
+
+/* Error text */
+.error-text {
+    font-size: 0.85rem;
+    color: #f87171;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Button */
+.contact-btn {
+    margin-top: 10px;
+    background: linear-gradient(135deg,
+            var(--accent),
+            #7ff3e6);
+    color: #020617;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(79, 209, 197, 0.45);
+}
+
+.contact-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Force placeholder color (all states) */
+.contact-form .form-control::placeholder {
+    color: #9ca3af !important;
+    opacity: 1;
+    /* Firefox fix */
+}
+
+/* On focus */
+.contact-form .form-control:focus::placeholder {
+    color: #6b7280 !important;
+}
+
+/* Disabled inputs */
+.contact-form .form-control:disabled::placeholder {
+    color: #6b7280 !important;
+}
+
+/* Text color safety */
+.contact-form .form-control {
+    color: #e5e7eb !important;
+}
