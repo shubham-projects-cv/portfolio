@@ -359,27 +359,68 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-/* LinkedIn */
+
+/* Ensure button is clean */
+.social-btn {
+    position: relative;
+    border: none;
+    outline: none;
+}
+
+/* ---------- LinkedIn ---------- */
 .social-btn.linkedin {
     background: linear-gradient(135deg, #0a66c2, #1e88e5);
-    box-shadow: 0 14px 35px rgba(10, 102, 194, 0.45);
+}
+
+.social-btn.linkedin::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,
+            rgba(10, 102, 194, 0.6),
+            rgba(30, 136, 229, 0.6));
+    z-index: -1;
+    opacity: 0.6;
+    transition: all 0.3s ease;
 }
 
 .social-btn.linkedin:hover {
-    transform: translateY(-4px) scale(1.08);
-    box-shadow: 0 24px 55px rgba(10, 102, 194, 0.65);
+    transform: translateY(-3px) scale(1.05);
 }
 
-/* Gmail */
+.social-btn.linkedin:hover::after {
+    opacity: 1;
+    filter: blur(6px);
+}
+
+/* ---------- Gmail ---------- */
 .social-btn.gmail {
     background: linear-gradient(135deg, #ea4335, #ff6b6b);
-    box-shadow: 0 14px 35px rgba(234, 67, 53, 0.45);
+}
+
+.social-btn.gmail::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,
+            rgba(234, 67, 53, 0.6),
+            rgba(255, 107, 107, 0.6));
+    z-index: -1;
+    opacity: 0.6;
+    transition: all 0.3s ease;
 }
 
 .social-btn.gmail:hover {
-    transform: translateY(-4px) scale(1.08);
-    box-shadow: 0 24px 55px rgba(234, 67, 53, 0.65);
+    transform: translateY(-3px) scale(1.05);
 }
+
+.social-btn.gmail:hover::after {
+    opacity: 1;
+    filter: blur(6px);
+}
+
 
 /* Mobile adjustments */
 @media (max-width: 480px) {
