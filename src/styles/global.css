@@ -333,3 +333,64 @@ a:hover {
 .contact-form .form-control {
     color: #e5e7eb !important;
 }
+
+/* Floating socials container (LEFT) */
+.floating-socials {
+    position: fixed;
+    left: 28px;
+    bottom: 28px;
+    /* above bottom edge */
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 999;
+}
+
+/* Common button style */
+.social-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* LinkedIn */
+.social-btn.linkedin {
+    background: linear-gradient(135deg, #0a66c2, #1e88e5);
+    box-shadow: 0 14px 35px rgba(10, 102, 194, 0.45);
+}
+
+.social-btn.linkedin:hover {
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 24px 55px rgba(10, 102, 194, 0.65);
+}
+
+/* Gmail */
+.social-btn.gmail {
+    background: linear-gradient(135deg, #ea4335, #ff6b6b);
+    box-shadow: 0 14px 35px rgba(234, 67, 53, 0.45);
+}
+
+.social-btn.gmail:hover {
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 24px 55px rgba(234, 67, 53, 0.65);
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    .floating-socials {
+        left: 16px;
+        bottom: 28px;
+    }
+
+    .social-btn {
+        width: 46px;
+        height: 46px;
+        font-size: 1.2rem;
+    }
+}

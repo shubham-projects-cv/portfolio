@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import FloatingResume from "./components/FloatingResume";
+import FloatingSocials from "./components/FloatingSocials";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Projects />
       <Contact />
       <FloatingResume />
+      <FloatingSocials />
     </>
 
   );
