@@ -7,7 +7,7 @@ export default function Hero() {
                 Hi, I'm <span className="text-info">Shubham Parab</span>
             </motion.h1>
             <p className="lead">
-                Full Stack Software Engineer | Immediate Joiner | React & MERN Specialist
+                Full Stack Software Engineer | Immediately Available | React & MERN Specialist
             </p>
         </section>
     );
