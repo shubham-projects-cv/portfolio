@@ -10,7 +10,7 @@ export default function Hero() {
         Hi, I'm <span className="text-info">Shubham Parab</span>
       </motion.h1>
       <p className="lead">
-        Full Stack Software Engineer | Immediately Available | React, Next.js &
+        Full Stack Software Engineer | React, Next.js &
         MERN Specialist
       </p>
     </section>
